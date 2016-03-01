@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Input Control</title>
+</head>
+
+
+<body>
+	<form action="http://localhost:4567/users" method="POST">
+		<fieldset>
+			<h3>CREATE USER</h3>
+			<p>ENTER USER INFORMATION</p>
+			First Name:  <input type="text" name="first_name" required="true" pattern="[A-Za-z]+" />
+			<br><br>
+			Middle Name:  <input type="text" name="middle_name" pattern="[A-Za-z]*" />
+			<br><br>
+			Last Name:  <input type="text" name="last_name" required="true" pattern="[A-Za-z]+" />
+			<br><br>
+			Age:  <input  type="number"  name="age" min="1" pattern="[0-9]{2} required="true" />
+			<br><br>
+			Gender:  <input type="text" name="gender" required="true" pattern="[M,F]{1}" />
+			<br><br>
+			Phone:  <input type="text" name="phone" pattern="[0-9]{10}" required="true" />
+			<br><br>
+			Zip:  <input type="text" name="zip" />
+			<br><br>
+			<input type="submit" value="Login">
+		</fieldset>
+	</form>
+</body>
+</html>
